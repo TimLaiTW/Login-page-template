@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import LoginPage from './LoginPage';
-ReactDOM.render(
-  <React.StrictMode>
-    <LoginPage />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import LoginPage from "./LoginPage";
 
+ReactDOM.render(
+    <BrowserRouter
+        basename=''>
+        <LoginPage />
+    </BrowserRouter>,
+    document.getElementById("root")
+);
