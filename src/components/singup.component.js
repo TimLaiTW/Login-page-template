@@ -35,20 +35,28 @@ export default class singup extends Component {
     render() {
         return (
             <div>
+                <h3>Sing up</h3>
                 <form onSubmit={this.handleSubmit}>
-                    <label>First name
+                    <div className='form-group'>
+                        <label>First name</label>
                         <input type='text' value={this.state.firstname}  onChange={this.handleFirstNameChange}/>
-                    </label>
-                    <label>Last name
+                    </div>
+
+                    <div className='form-group'>
+                        <label>Last name</label>
                         <input type='text' value={this.state.lastname}  onChange={this.handlelastNameChange}/>
-                    </label>
-                    <label>Email
+                    </div>
+
+                    <div className='form-group'>
+                        <label>Email</label>
                         <input type='text' value={this.state.email}  onChange={this.handleEmailChange}/>
-                    </label>
-                    <label>Password
+                    </div>
+
+                    <div className='form-group'>
+                        <label>Password</label>
                         <input type='text' value={this.state.password}  onChange={this.handlePasswordChange}/>
-                    </label>
-                    <input type='submit' value='submit' />
+                    </div>
+                    <button type='submit'>Submit</button>
                 </form>
                 <p>
                     Already registered? <a href='/sing-in'>Sign in</a>

@@ -5,8 +5,7 @@ import "./index.css";
 import LoginPage from "./LoginPage";
 
 ReactDOM.render(
-    <BrowserRouter
-        basename=''>
+    <BrowserRouter>
         <LoginPage />
     </BrowserRouter>,
     document.getElementById("root")

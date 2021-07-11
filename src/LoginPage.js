@@ -10,11 +10,15 @@ function LoginPage() {
         <Link to={"/sing-in"}>Login</Link>
         <Link to={"/sing-up"}>Sign up</Link>
       </div> */}
-      <Switch>
-        <Route exact path='/' component={Login} />
-        <Route path='/sing-in' component={Login} />
-        <Route path='/sing-up' component={Signup} />
-      </Switch>
+      <div className='auth-wrapper'>
+        <div className='auth-inner'>
+          <Switch>
+            <Route exact path='/' component={Login} />
+            <Route path='/sing-in' component={Login} />
+            <Route path='/sing-up' component={Signup} />
+          </Switch>
+        </div>
+      </div>
     </Router>
   );
 }

@@ -27,15 +27,19 @@ export default class login extends Component {
     render() {
         return (
             <div>
+                <h3>Sing in</h3>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Email
+                    <div className='form-group'>
+                        <label>Email</label>
                         <input type='text' value={this.state.email} onChange={this.handleEmailChange}/>
-                    </label>
+                    </div>
 
-                    <label>Password
+                    <div className='form-group'>
+                        <label>Password</label>
                         <input type='text' value={this.state.password} onChange={this.handlePwdChange}/>
-                    </label>
-                    <input type='submit' value='submit'/>
+                    </div>
+
+                    <button type='submit'>Submit</button>
                 </form>
                 <p>
                     Forget <a href='#'>password?</a>
