@@ -39,15 +39,16 @@ export default class login extends Component {
 
                     <div className='form-group'>
                         <label hidden>Password</label>
-                        <input className='input-field' type='text' placeholder='Password' value={this.state.password} onChange={this.handlePwdChange}/>
+                        <input className='input-field' type='password' placeholder='Password' value={this.state.password} onChange={this.handlePwdChange}/>
                     </div>
 
+                    <div className='form-group'>
+                    <p className="text-normal">
+                        <a href='#'>Forget password?</a>
+                    </p>
                     <button type='submit'>Login</button>
+                </div>
                 </form>
-                <p>
-                    <a href='#'>Forget password?</a>
-                </p>
-                
             </div>
         )
     }

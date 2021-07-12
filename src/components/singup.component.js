@@ -57,9 +57,12 @@ export default class singup extends Component {
 
                     <div className='form-group'>
                         <label hidden>Password</label>
-                        <input className='input-field' type='text' placeholder='Password' value={this.state.password}  onChange={this.handlePasswordChange}/>
+                        <input className='input-field' type='password' placeholder='Password' value={this.state.password}  onChange={this.handlePasswordChange}/>
                     </div>
-                    <button type='submit'>Submit</button>
+
+                    <div className='form-group'>
+                        <button type='submit'>Submit</button>
+                    </div>
                 </form>
             </div>
         )
