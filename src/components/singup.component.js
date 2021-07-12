@@ -35,7 +35,7 @@ export default class singup extends Component {
     render() {
         return (
             <div>
-                <h1 className="text-large">Sing up</h1>
+                <h1 className="text-large">Sign up</h1>
                 <p className="text-normal">
                     Already registered? <a href='/sing-in'>Sign in</a>
                 </p>

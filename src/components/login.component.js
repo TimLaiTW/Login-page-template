@@ -27,7 +27,7 @@ export default class login extends Component {
     render() {
         return (
             <div>
-                <h1 className="text-large">Sing in</h1>
+                <h1 className="text-large">Sign in</h1>
                 <p className="text-normal">
                     New user? <a href='/sing-up'>Create an account</a>
                 </p>
