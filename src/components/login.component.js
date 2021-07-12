@@ -27,26 +27,27 @@ export default class login extends Component {
     render() {
         return (
             <div>
-                <h3>Sing in</h3>
-                <form onSubmit={this.handleSubmit}>
+                <h1 className="text-large">Sing in</h1>
+                <p className="text-normal">
+                    New user? <a href='/sing-up'>Create an account</a>
+                </p>
+                <form className='form' onSubmit={this.handleSubmit}>
                     <div className='form-group'>
-                        <label>Email</label>
-                        <input type='text' value={this.state.email} onChange={this.handleEmailChange}/>
+                        <label hidden>Email Address</label>
+                        <input className='input-field' type='text' placeholder='Email Address' value={this.state.email} onChange={this.handleEmailChange}/>
                     </div>
 
                     <div className='form-group'>
-                        <label>Password</label>
-                        <input type='text' value={this.state.password} onChange={this.handlePwdChange}/>
+                        <label hidden>Password</label>
+                        <input className='input-field' type='text' placeholder='Password' value={this.state.password} onChange={this.handlePwdChange}/>
                     </div>
 
-                    <button type='submit'>Submit</button>
+                    <button type='submit'>Login</button>
                 </form>
                 <p>
-                    Forget <a href='#'>password?</a>
+                    <a href='#'>Forget password?</a>
                 </p>
-                <p>
-                    Not a member? <a href='/sing-up'>Sign up</a>
-                </p>
+                
             </div>
         )
     }

@@ -35,32 +35,32 @@ export default class singup extends Component {
     render() {
         return (
             <div>
-                <h3>Sing up</h3>
-                <form onSubmit={this.handleSubmit}>
+                <h1 className="text-large">Sing up</h1>
+                <p className="text-normal">
+                    Already registered? <a href='/sing-in'>Sign in</a>
+                </p>
+                <form className='form' onSubmit={this.handleSubmit}>
                     <div className='form-group'>
-                        <label>First name</label>
-                        <input type='text' value={this.state.firstname}  onChange={this.handleFirstNameChange}/>
+                        <label hidden>First name</label>
+                        <input className='input-field' type='text' placeholder='First Name' value={this.state.firstname}  onChange={this.handleFirstNameChange}/>
                     </div>
 
                     <div className='form-group'>
-                        <label>Last name</label>
-                        <input type='text' value={this.state.lastname}  onChange={this.handlelastNameChange}/>
+                        <label hidden>Last name</label>
+                        <input className='input-field' type='text' placeholder='Last Name' value={this.state.lastname}  onChange={this.handlelastNameChange}/>
                     </div>
 
                     <div className='form-group'>
-                        <label>Email</label>
-                        <input type='text' value={this.state.email}  onChange={this.handleEmailChange}/>
+                        <label hidden>Email Address</label>
+                        <input className='input-field' type='text' placeholder='Email Address' value={this.state.email}  onChange={this.handleEmailChange}/>
                     </div>
 
                     <div className='form-group'>
-                        <label>Password</label>
-                        <input type='text' value={this.state.password}  onChange={this.handlePasswordChange}/>
+                        <label hidden>Password</label>
+                        <input className='input-field' type='text' placeholder='Password' value={this.state.password}  onChange={this.handlePasswordChange}/>
                     </div>
                     <button type='submit'>Submit</button>
                 </form>
-                <p>
-                    Already registered? <a href='/sing-in'>Sign in</a>
-                </p>
             </div>
         )
     }
