@@ -6,6 +6,6 @@ This is a easy and beautiful Login card which could be easily implemented to any
 
 ![Sign up page](https://github.com/TimLaiTW/Login-page-template/blob/master/public/img/signup.png)
 
-![root var](https://github.com/TimLaiTW/Login-page-template/blob/master/public/img/root_var.png)
-
 With few simple steps on modifying variables in :root to build your own website style.
+
+![root var](https://github.com/TimLaiTW/Login-page-template/blob/master/public/img/root_var.png)
